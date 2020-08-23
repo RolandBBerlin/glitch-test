@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fks Vektorrennen</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Autorennen</h1>
+
+    <p>
+      Versuche, das Oval mit so wenig Pfeilen wie möglich zu umrunden. 
+    </p>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+    <div id="status"></div>
+    
+    <!-- Canvas-Objekte für 4 übereinanderliegende Zeichenflächen  -->
+    <section>
+      <div
+        id="canvasesdiv"
+        style="position:relative; width:600px; height:300px"
+      >
+        <canvas
+          id="layer0"
+          style="z-index: 0;
+              position:absolute;
+              left:0px;
+              top:0px;
+              "
+          height="300px"
+          width="600"
+        >
+          This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <canvas
+          id="layer1"
+          style="z-index: 1;
+              position:absolute;
+              left:0px;
+              top:0px;
+              "
+          height="300px"
+          width="600"
+        >
+          This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <canvas
+          id="layer2"
+          style="z-index: 2;
+              position:absolute;
+              left:0px;
+              top:0px;
+              "
+          height="300px"
+          width="600"
+        >
+          This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+        <canvas
+          id="layer3"
+          style="z-index: 3;
+              position:absolute;
+              left:0px;
+              top:0px;
+              "
+          height="300px"
+          width="600"
+        >
+          This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+      </div>
+      
+      
+      <br>
+      <i><b>Hinweis: </b></i><pre id="Hinweis">Wähle Deinen Startpunkt</pre> 
+          
+      <button onclick="neuStarten()">Neu Starten</button>
+      
+      <script src="/script2.js" defer></script>
+      
+    </section>
+    
+  </body>
+</html>
